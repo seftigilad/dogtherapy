@@ -1,0 +1,8 @@
+
+RewriteEngine on
+RewriteCond %{HTTPS} off
+RewriteCond %{HTTP:X-Forwarded-SSL} !on
+RewriteCond %{HTTP_HOST} ^dogtherapy\.co\.il$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.dogtherapy\.co\.il$
+RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+RewriteRule ^blogentry/(.*)$ blogentry.php?url=$1 [L,QSA]
