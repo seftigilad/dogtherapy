@@ -7,6 +7,19 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="הבלוג של בתאל - טיפים, סיפורים והשראה מעולם הכלבנות הטיפולית. ילדים, כלבים וצמיחה רגשית. כלבנית טיפולית בבאר יעקב.">
 		<meta name="keywords" content="בלוג כלבנות טיפולית, טיפים על כלבים וילדים, פחד מכלבים אצל ילדים, כלבנית טיפולית באר יעקב">
+
+		<meta property="og:type" content="website">
+		<meta property="og:locale" content="he_IL">
+		<meta property="og:site_name" content="כלבנות טיפולית - בתאל ואיימי">
+		<meta property="og:url" content="https://dogtherapy.co.il/blog.php">
+		<meta property="og:title" content="בלוג כלבנות טיפולית | טיפים והשראה - בתאל ואיימי">
+		<meta property="og:description" content="הבלוג של בתאל - טיפים, סיפורים והשראה מעולם הכלבנות הטיפולית. ילדים, כלבים וצמיחה רגשית. כלבנית טיפולית בבאר יעקב.">
+		<meta property="og:image" content="https://dogtherapy.co.il/images/bg_5.jpg">
+		<meta name="twitter:card" content="summary_large_image">
+		<meta name="twitter:title" content="בלוג כלבנות טיפולית - בתאל ואיימי">
+		<meta name="twitter:description" content="טיפים, סיפורים והשראה מעולם הכלבנות הטיפולית.">
+		<meta name="twitter:image" content="https://dogtherapy.co.il/images/bg_5.jpg">
+
 		<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
 	
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -50,7 +63,7 @@
                 <span class="fa fa-phone mr-1"></span> 052-6416831
               </a>
               <a
-                href="https://wa.me/+972526416831"
+                href="https://wa.me/+972526416831?text=%D7%A9%D7%9C%D7%95%D7%9D%2C%20%D7%94%D7%92%D7%A2%D7%AA%D7%99%20%D7%93%D7%A8%D7%9A%20%D7%94%D7%90%D7%AA%D7%A8%20%D7%95%D7%90%D7%A0%D7%99%20%D7%9E%D7%A2%D7%95%D7%A0%D7%99%D7%99%D7%9F%2F%D7%AA%20%D7%91%D7%A4%D7%A8%D7%98%D7%99%D7%9D%20%D7%A2%D7%9C%20%D7%9B%D7%9C%D7%91%D7%A0%D7%95%D7%AA%20%D7%98%D7%99%D7%A4%D7%95%D7%9C%D7%99%D7%AA"
                 target="_blank"
                 style="color: #fff"
               >
@@ -188,6 +201,15 @@
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
   <script src="js/google-map.js"></script>
   <script src="js/main.js"></script>
-    
+
+  <a
+    href="https://wa.me/972526416831?text=%D7%A9%D7%9C%D7%95%D7%9D%2C%20%D7%94%D7%92%D7%A2%D7%AA%D7%99%20%D7%93%D7%A8%D7%9A%20%D7%94%D7%90%D7%AA%D7%A8%20%D7%95%D7%90%D7%A0%D7%99%20%D7%9E%D7%A2%D7%95%D7%A0%D7%99%D7%99%D7%9F%2F%D7%AA%20%D7%91%D7%A4%D7%A8%D7%98%D7%99%D7%9D%20%D7%A2%D7%9C%20%D7%9B%D7%9C%D7%91%D7%A0%D7%95%D7%AA%20%D7%98%D7%99%D7%A4%D7%95%D7%9C%D7%99%D7%AA"
+    class="float-whatsapp"
+    target="_blank"
+    rel="noopener"
+    aria-label="פנייה בוואטסאפ">
+    <span class="fa fa-whatsapp"></span>
+  </a>
+
   </body>
 </html>
