@@ -12850,3 +12850,171 @@ textarea.form-control {
     line-height: 56px;
   }
 }
+
+/* ============================================================
+   WARM & LIVELY THEME  — added 2026-06
+   Brief: warmth · empathy · healing · happiness, with life.
+   Sage green (#589167) kept as the calm/healing base; warm
+   coral + sunny amber + cream layered on for warmth and joy.
+   Icons are injected with ::before so NO markup/text changes.
+   Optimised for how it reads on mobile. Delete this whole
+   block to fully revert.
+   ============================================================ */
+:root {
+  --warm-coral: #e8896b;
+  --warm-amber: #f2b05e;
+  --warm-cream: #fbf6ef;
+  --sage: #589167;
+}
+
+/* Softer, warmer backgrounds (cream instead of cold grey) */
+body { background: var(--warm-cream); }
+.bg-light { background: var(--warm-cream) !important; }
+
+/* Warm, inviting section labels + a little heart icon */
+.heading-section .subheading { color: var(--warm-coral) !important; }
+.heading-section .subheading::before {
+  font-family: "FontAwesome";
+  content: "\f004"; /* fa-heart */
+  margin-left: 8px;
+  font-weight: normal;
+}
+
+/* Content headings on light panels → warm charcoal (white-text
+   hero variants keep their own higher-specificity rule) */
+.heading-section h1,
+.heading-section h2,
+.heading-section h3 { color: #3f352b; }
+.heading-section .lead { color: #6b5d4f; }
+
+/* Dog personalities — each intro paragraph in its own warm tone:
+   Amy the golden = gentle, loving honey-gold;
+   Candy the poodle = playful, energetic coral-pink. */
+.dog-amy {
+  color: #a8741a;
+  font-weight: 500;
+}
+.dog-candy {
+  color: #cf5a7e;
+  font-weight: 500;
+}
+
+/* Therapy-benefit list — each point gets a meaning-matched icon
+   and its own warm colour (icon + bold label share the colour) */
+.benefits-list { line-height: 2.1; }
+.benefit-icon {
+  width: 24px;
+  text-align: center;
+  margin-left: 8px;
+}
+.b-joy    { color: #ef9a2e; } /* fun / joy        – sunny amber */
+.b-love   { color: #e8896b; } /* emotional support – warm coral */
+.b-social { color: #4f93a8; } /* social skills     – calm teal  */
+.b-cog    { color: #589167; } /* cognitive growth  – sage green */
+.b-conf   { color: #d49a23; } /* self-confidence   – gold       */
+.b-emp    { color: #cf5a7e; } /* empathy           – rose       */
+.b-belong { color: #c9743f; } /* belonging         – terracotta */
+.b-content{ color: #d96a4a; } /* contentment/love  – deep coral */
+
+/* Gentle step list (e.g. the fear-of-dogs journey) — soft icons,
+   no harsh bullets, a tender empathetic feel */
+.gentle-steps { list-style: none; padding: 0; margin-bottom: 1rem; }
+.gentle-steps li {
+  margin-bottom: 12px;
+  line-height: 1.8;
+  color: #6b5d4f;
+}
+.gentle-steps li .benefit-icon { font-size: 17px; }
+
+/* Contact cards — give each icon a colour that fits its meaning
+   (matched via :has, so no markup change). Brand colours kept for
+   WhatsApp/Facebook so they stay instantly recognisable. */
+.dbox .icon:has(.fa-map-marker)  { background: #c9743f; } /* location – terracotta */
+.dbox .icon:has(.fa-phone)       { background: #e8896b; } /* call us  – warm coral  */
+.dbox .icon:has(.fa-whatsapp)    { background: #25d366; } /* WhatsApp brand green   */
+.dbox .icon:has(.fa-facebook)    { background: #3b5998; } /* Facebook brand blue    */
+.dbox .icon:has(.fa-paper-plane) { background: #ef9a2e; } /* email   – sunny amber  */
+
+/* A little life: cards lift gently on hover/tap */
+.dbox {
+  -webkit-transition: 0.3s all ease;
+  -o-transition: 0.3s all ease;
+  transition: 0.3s all ease;
+}
+a:hover .dbox { -webkit-transform: translateY(-5px); transform: translateY(-5px); }
+
+/* City-page service lists — a meaning-matched icon per service,
+   matched by link target so it covers every city page with no
+   markup change (scoped to in-content lists, nav stays clean) */
+.heading-section ul:has(li a[href="pricing.html"]),
+.heading-section ul:has(li a[href="class.html"]),
+.heading-section ul:has(li a[href="fear.html"]),
+.heading-section ul:has(li a[href="gefen.html"]) {
+  list-style: none;
+  padding: 0;
+}
+.heading-section ul li a[href="pricing.html"]::before,
+.heading-section ul li a[href="class.html"]::before,
+.heading-section ul li a[href="fear.html"]::before,
+.heading-section ul li a[href="gefen.html"]::before {
+  font-family: "FontAwesome";
+  margin-left: 8px;
+}
+.heading-section ul li a[href="pricing.html"]::before { content: "\f004"; color: #e8896b; } /* heart – emotional therapy */
+.heading-section ul li a[href="class.html"]::before   { content: "\f19d"; color: #589167; } /* grad-cap – classes      */
+.heading-section ul li a[href="fear.html"]::before     { content: "\f132"; color: #4f93a8; } /* shield – safe fear work  */
+.heading-section ul li a[href="gefen.html"]::before    { content: "\f19c"; color: #d49a23; } /* university – Gefen prog. */
+
+/* Warm links + lively hover (footer keeps its own white rule) */
+a:hover,
+a:focus { color: var(--warm-coral); }
+
+/* CTA buttons → warm coral, with a soft glow that lifts on tap */
+.btn.btn-primary {
+  background: -webkit-linear-gradient(315deg, #f0a07f, #e8896b) !important;
+  background: linear-gradient(135deg, #f0a07f, #e8896b) !important;
+  border: 1px solid #e8896b !important;
+  color: #fff !important;
+  box-shadow: 0 6px 18px rgba(232, 137, 107, 0.35);
+  -webkit-transition: 0.3s all ease;
+  -o-transition: 0.3s all ease;
+  transition: 0.3s all ease;
+}
+.btn.btn-primary:hover,
+.btn.btn-primary:focus {
+  background: -webkit-linear-gradient(315deg, #e8896b, #d9714f) !important;
+  background: linear-gradient(135deg, #e8896b, #d9714f) !important;
+  -webkit-transform: translateY(-2px);
+  transform: translateY(-2px);
+}
+
+/* Warmer dark surfaces — these are the big ones on a phone:
+   the mobile menu bar and the footer (cold black → warm brown) */
+@media (max-width: 991.98px) {
+  .ftco-navbar-light { background: #2b211b !important; }
+}
+.ftco-footer { background: #2b211b; }
+
+/* Sunny paw accent before the footer headline */
+.ftco-footer .ftco-footer-widget .logo a::before {
+  font-family: "FontAwesome";
+  content: "\f1b0"; /* fa-paw */
+  color: var(--warm-amber);
+  margin-left: 10px;
+}
+
+/* WhatsApp button — a gentle living pulse to catch the eye on
+   mobile (it is the main lead button on a phone) */
+.float-whatsapp {
+  box-shadow: 0 6px 18px rgba(37, 211, 102, 0.45);
+  -webkit-animation: warmPulse 2.4s ease-in-out infinite;
+  animation: warmPulse 2.4s ease-in-out infinite;
+}
+@-webkit-keyframes warmPulse {
+  0%, 100% { -webkit-transform: scale(1); }
+  50% { -webkit-transform: scale(1.07); }
+}
+@keyframes warmPulse {
+  0%, 100% { transform: scale(1); box-shadow: 0 6px 18px rgba(37, 211, 102, 0.45); }
+  50% { transform: scale(1.07); box-shadow: 0 10px 26px rgba(37, 211, 102, 0.6); }
+}
